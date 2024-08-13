@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="logica.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@300;400&family=Dongle&family=Foldit:wght@100..900&family=Josefin+Sans:ital,wght@0,500;1,400&family=Kalam:wght@300&family=Montserrat:wght@300&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200&display=swap" rel="stylesheet">
+</head>
+<header>
+    <img class="imagen_logo" src="Imagenes/Logo.png" alt="logo-alura-latam">
+    <p class="parrafo_header">Desafio encriptador de texto, requisito para completar la etapa de <h3 class="titulo_header">"Principiante de programación"</h3></p>
+</header>
+<body>
+    <h1 class="titulo_unico">Encriptador de texto</h1>
+    <section class="bloque_principal">
+        <div class="bloque_ingresar">
+            <textarea class="dentro_area_encriptar" type="texto" placeholder="Escribe el mensaje a Encriptar"  cols="50" rows="10"></textarea>
+            <p class="parrafo_botones">&#9888 Solo debe ingresar letras minúsculas, sin acentos ni caracteres especiales</p>
+            <div class="bloque_botones">
+                <button class="boton_encriptar" type="button" onclick="EncriptarMensaje()">Encriptar</button>
+                <button class="boton_desencriptar" type="button" onclick="desencriptarMensaje()">Desencriptar</button>
+            </div>
+        </div>
+        <div class="bloque_encriptado">
+            <img id="imagen_muneco" class="muneco" src="Imagenes/Muñeco.png" alt="muñeco-buscador">
+            <textarea class="dentro_area_encriptado" type="text" placeholder="Aquí aparecerá el texto una vez Encriptado."></textarea>
+            <div class="botones_encriptado">
+                <button type="button" class="boton_copiar" onclick="copiarMensaje()">Copiar</button>
+                <button class="boton_limpiar" type="button" onclick="limpiarTexto()">Limpiar</button>
+            </div>
+        </div>
+    </section>
+
+</body>
+<footer>
+    <ul>
+        <li>Autora: Daniela Tavera</li>
+        <li>Nacionalidad: Venezolana.</li>
+        <li>&#128187 Amante de la programación (Hobbie), &#128218 Estudiante Universitaria de Pedagogía.</li>
+        <li>&#9917 Entrenadora de futbol base dirigido a niños, niñas y adolescentes.</li>
+    </ul>        
+</footer>
+</html>

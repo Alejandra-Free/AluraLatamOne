@@ -1,0 +1,276 @@
+body {
+    background: linear-gradient(to bottom, #c781de, #8d64d9, #6598ad);
+}
+
+:root {
+    --color-uno: #1a020a;
+    --color-dos: #082d42;
+    --color-tres: #eab5f5;
+    --fuente-titulos: "Montserrat", sans-serif;
+    --fuente-otros: "Kalam", cursive;
+}
+
+/*Estilo de la cabecera*/
+header {
+    display: flex;
+    align-items: center;
+}
+
+.parrafo_header {
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: var(--fuente-titulos);
+}
+
+.titulo_header {
+    margin-left: 5px;
+    font-size: 1.5rem;
+    font-family: "Chivo Mono", monospace;
+}
+
+/*Estos son el estilo de la pagina de presentacion... */
+.navegador {
+    display: inline-block;
+    width: 80%;
+    background: linear-gradient(to bottom, #dcedf7, #8d64d9, #c781de);
+    align-items: center;
+    padding: 1rem;
+    border-radius: 1.25rem;
+    margin: 1rem 0 0 7rem;
+}
+
+.parrafo_enlace {
+    gap: 20px;
+    font-family: "Kalam", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-uno);
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 2px #6f4887, 0 0 1em #eab5f5, 0 0 0.2em #c785c3;
+}
+
+.indicador {
+    font-family: "Montserrat", sans-serif;
+    margin-left: 15.5rem;
+    color: var(--color-dos);
+    text-shadow: 1px 1px 2px #6f4887, 0 0 1em #eab5f5, 0 0 0.2em #c785c3;
+    font-size: 2rem;
+}
+
+.linea_corta {
+    margin-left: 26rem;
+    font-family: "Josefin Sans", sans-serif;
+    color: var(--color-uno);
+    font-size: 1rem;
+}
+
+.enlace {
+    display: none;
+}
+
+.navegador:hover > .enlace {
+    display: inline-block;
+    font-family: "Dongle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-uno);
+    font-size: 3rem;
+    margin-left: 20rem;
+    text-decoration: none;
+}
+
+.navegador:hover > .parrafo_enlace {
+    display: none;
+}
+
+.navegador:hover > .linea_corta {
+    display: none;
+}
+
+/*Aqui comienzan los estilos del encriptador de texto*/
+.bloque_principal {
+    display: grid;
+    grid-auto-flow: column;
+    position: relative;
+    margin: 1.5rem;
+    padding: 2rem;
+}
+
+.titulo_unico {
+    font-family: var(--fuente-titulos);
+    font-weight: 400;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.bloque_ingresar{
+    margin-left: 1.5rem;
+}
+
+::placeholder {
+    font-family: var(--fuente-otros);
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-uno);
+}
+
+.dentro_area_encriptar {
+    display: inline;
+    margin-top: 3rem;
+    font-family: monospace;
+    font-size: 20px;
+    color: var(--color-dos);
+    padding-left: 3rem;
+    font-style: normal;
+    font-weight: 400px;
+    outline: none;
+    background: transparent;
+    border: none;
+}
+
+.bloque_botones {
+    margin-left: 4rem   
+}
+
+.parrafo_botones {
+    font-family: var(--fuente-otros);
+    font-weight: 700;
+    color: var(--color-uno);
+}
+
+.boton_encriptar, .boton_desencriptar {
+    margin: 0 1.5rem 0 1.5rem;
+    padding: 4px 30px;
+    color: var(--color-tres);
+    background: linear-gradient(to bottom right, #ffff, #06283b, 90%, #e6b8f2);
+    border: 2px solid var(--color-dos);
+    border-radius: 10px;
+}
+
+.boton_encriptar:hover, .boton_desencriptar:hover {
+    font-weight: bolder;
+    background: linear-gradient(to bottom right, #ffff, #e6b8f2, 90%, #06283b);
+    color: var(--color-uno);
+}
+
+.bloque_encriptado {
+    display: inline-block;
+    align-items: center;
+    position: relative;
+    background: linear-gradient(to bottom, #dcedf7, #79b9db, 65%, #c781de 75%);
+    width: 300px;
+    height: 450px;  
+    border-radius: 20px;
+    box-shadow: 0 0 30px 10px #79b9db;
+}
+
+.bloque_encriptado:hover {
+    border: 3px groove var(--color-uno);
+    box-shadow: 0 0 40px 15px #c781de;
+}
+
+#imagen_muneco {
+    display: flex;
+    position: relative;
+    align-content: center;
+    margin: 2rem 0 0 2rem;
+    height: 165px;
+    width: 220px;
+}
+
+.dentro_area_encriptado {
+    width: 200px;
+    height: 100px;
+    font-family: monospace;
+    color: #4d1e31;
+    font-size: 1.3em;
+    text-align: center;
+    padding: 5px;
+    background: transparent;
+    margin: 40px 10px 40px 50px;
+    outline: none;
+    border: none;
+}
+
+.botones_encriptado {
+    display: inline-block;
+    position: relative;
+    margin: 0 0 0 2rem;
+}
+
+.boton_copiar, .boton_limpiar {
+    margin: 0 0.75rem 0 0;
+    padding: 4px 30px;
+    color: #cceaf0;
+    background: linear-gradient(to bottom right, #ffff, #360942, 90%, #e6b8f2);
+    border: 2px solid #cceaf0;
+    border-radius: 10px;
+}
+
+.boton_copiar:hover, .boton_limpiar:hover {
+    color: var(--color-uno);
+    background: linear-gradient(to bottom left, #79b9db, 65%, #dcedf7);
+    font-weight: bolder;
+    border: 2px solid #fc03f4;
+}
+
+/*Estilo del pie de página*/
+footer {
+    display: inline;
+    flex-direction: column;
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    font-family: var(--fuente-titulos);
+    font-weight: 600;
+    font-size: 0.75rem;
+}
+
+@media (max-width: 820px) {
+    .header {
+        display: grid;
+        grid-auto-flow: row;
+    }
+
+    .titulo_header {
+        
+        margin-left: 5px;
+        font-size: 1rem;
+        justify-content: center;
+    }
+
+    .bloque_principal {
+        grid-auto-flow: row;
+        margin-left: 0.25rem;
+        padding: 0.25rem;
+    }
+
+    .dentro_area_encriptar {
+        margin-left: 0.25rem;
+        padding: 0.25rem;
+    }
+
+    .parrafo_botones {
+        margin-left: 0.25rem;
+        text-align: center;
+    }
+    
+    .boton_encriptar, .boton_desencriptar {
+        margin: 0 0.25rem 0 0.25rem;
+    }
+
+    .bloque_encriptado {
+        margin-top: 2rem;
+    }
+
+    #imagen_muneco {
+        margin: 1rem 0 0 1rem;
+    }
+    
+}
+
